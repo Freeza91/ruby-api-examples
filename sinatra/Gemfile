@@ -1,0 +1,15 @@
+source 'http://ruby.taobao.org'
+
+gem 'sinatra'
+gem 'sinatra-activerecord'
+gem 'sinatra-contrib'
+
+gem 'mysql2'
+gem 'thin'
+
+gem 'slim'
+gem 'rack_csrf'
+
+group :development do
+  gem 'shotgun'
+end
