@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 
   get '/' do
     @hello = 'hello'
-    jbuilder :'/users/new.json'
+    jbuilder :'/users/new'
     # slim :'users/new' #welcome
   end
 
