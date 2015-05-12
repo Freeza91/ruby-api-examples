@@ -1,2 +1,5 @@
 div
-  h1 users
+  form action="/users/create" method="POST"
+    == Rack::Csrf.tag(env)
+    input type='text' name='hello'
+    button name='submit' submit

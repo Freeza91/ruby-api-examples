@@ -10,6 +10,10 @@ class UsersController < ApplicationController
   helpers ApplicationHelper
   helpers UserHelper
 
+  get '/new' do
+    slim :'/users/new'
+  end
+
   get '/' do
     @hello = 'hello'
     jbuilder :'/users/new'
@@ -18,6 +22,10 @@ class UsersController < ApplicationController
 
   get '/show' do
     show
+  end
+
+  post '/create' do
+    p "hello create"
   end
 
 end
