@@ -11,7 +11,9 @@ class UsersController < ApplicationController
   helpers UserHelper
 
   get '/' do
-    slim :'users/new' #welcome
+    @hello = 'hello'
+    jbuilder :'/users/new.json'
+    # slim :'users/new' #welcome
   end
 
   get '/show' do
