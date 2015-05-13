@@ -9,7 +9,7 @@ gem 'thin'
 
 gem 'slim'
 gem 'tilt-jbuilder', :require => "sinatra/jbuilder"
-gem 'rack_csrf'
+gem 'rack_csrf', :require => "rack/csrf"
 
 group :development do
   gem 'shotgun'

@@ -1,17 +1,5 @@
 require File.expand_path('../boot', __FILE__)
 
-require 'bundler'
-Bundler.require
-
-# require 'sinatra/base'
-# require 'sinatra/activerecord'
-# require "sinatra/contrib"
-# # require "tilt/jbuilder"
-# # require "sinatra/jbuilder"
-# require 'slim'
-require 'rack/csrf'
-
-
 class MyApp < Sinatra::Base
   register Sinatra::Contrib
 
