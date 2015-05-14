@@ -28,4 +28,9 @@ class UsersController < ApplicationController
     p "hello create"
   end
 
+  def show
+    @user = User.create(username: 'rudyboy', password: '123456', email: 'rudy@github.com')
+    slim :'/users/show'
+  end
+
 end
