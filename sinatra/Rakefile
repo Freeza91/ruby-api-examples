@@ -1,7 +1,6 @@
 require 'active_support'
 require 'active_record'
 
-
 # use `bundle exec rake db:drop`
 # need `gem uninstall bigdecimal` to ignore warning!!
 
