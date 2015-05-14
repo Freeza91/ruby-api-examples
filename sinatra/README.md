@@ -1,9 +1,8 @@
 ### sinatra
 
- ab -c 50 -n 100 http://127.0.0.1:9393/users/show
-
 > 使用em_mysql2
  ab -c 50 -n 100 http://127.0.0.1:9393/users/show
+
     Concurrency Level:      50
     Time taken for tests:   66.995 seconds
     Complete requests:      100
@@ -23,6 +22,7 @@
     Total:      21200 29589 5916.9  32589   40907
 
 > 使用mysql2
+
       Concurrency Level:      50
       Time taken for tests:   69.279 seconds
       Complete requests:      100
@@ -42,7 +42,7 @@
       Total:      15101 30486 7200.6  33412   41913 
 
 
-ab -c 100 -n 500 -s 60 http://127.0.0.1:9393/users/show（均挂）
+ab -c 100 -n 500 -s 60 http://127.0.0.1:9393/users/show        （均挂）
 
 
 ab -c 100 -n 500 -s 100 http://127.0.0.1:9393/users/show
