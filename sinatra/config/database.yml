@@ -1,5 +1,5 @@
 default: &default
-  adapter: em_mysql2
+  adapter: em_mysql2 # or mysql
   encoding: utf8
   reconnect: true
   pool: 5

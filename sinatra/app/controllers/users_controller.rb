@@ -29,7 +29,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.create(username: 'rudyboy', password: '123456', email: 'rudy@github.com')
+    # @user = User.create(username: 'rudyboy', password: '123456', email: 'rudy@github.com')
+    @user = User.last
     slim :'/users/show'
   end
 
