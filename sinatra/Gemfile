@@ -1,10 +1,15 @@
 source 'http://ruby.taobao.org'
 
-gem 'sinatra'
-gem 'sinatra-activerecord'
-gem 'sinatra-contrib'
+gem 'rake'
 
+gem 'sinatra'
+gem 'sinatra-contrib'
+gem 'sinatra-synchrony', :require => 'sinatra/synchrony'
+gem 'em-synchrony', '1.0.3', :require => ['em-synchrony', 'em-synchrony/mysql2', 'em-synchrony/activerecord']
+gem 'activerecord', :require => 'active_record'
+# gem 'sinatra-activerecord'
 gem 'mysql2'
+
 gem 'thin'
 
 gem 'slim'
