@@ -49,6 +49,9 @@ GEM
       rack (>= 1.0)
     rack_csrf (2.5.0)
       rack (>= 1.1.0)
+    racksh (1.0.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5)
     rake (10.4.2)
     shotgun (0.9.1)
       rack (>= 1.0)
@@ -94,6 +97,7 @@ DEPENDENCIES
   em-synchrony (= 1.0.3)
   mysql2
   rack_csrf
+  racksh
   rake
   shotgun
   sinatra
