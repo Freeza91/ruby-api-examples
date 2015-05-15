@@ -11,6 +11,12 @@ gem 'activerecord', :require => 'active_record'
 gem 'mysql2'
 gem 'racksh'
 
+#assets
+gem 'sass'
+gem 'uglifier'
+gem 'sinatra-asset-pipeline', :require => 'sinatra/asset_pipeline'
+gem 'sprockets-helpers', :require => 'sprockets-helpers'
+
 gem 'thin'
 
 gem 'slim'

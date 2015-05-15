@@ -71,3 +71,8 @@ namespace :db do
     puts ActiveRecord::Migrator.current_version
   end
 end
+
+require File.expand_path('../config/application', __FILE__)
+require 'sinatra/asset_pipeline/task'
+Sinatra::AssetPipeline::Task.define! MyApp
+# bundle exec rake assets:clean RACK_ENV=production

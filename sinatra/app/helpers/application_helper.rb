@@ -1,5 +1,6 @@
 module ApplicationHelper
 
+  include Sprockets::Helpers
   # not work!
   # def render_jbuilder(path)
   #   template = Tilt::JbuilderTemplate.new("#{settings.views}/#{path}")
