@@ -17,6 +17,10 @@ gem 'uglifier'
 gem 'sinatra-asset-pipeline', :require => 'sinatra/asset_pipeline'
 gem 'sprockets-helpers', :require => 'sprockets-helpers'
 
+gem 'bootstrap-sass'
+gem 'compass' # using compass install: cd app/assets;
+              # compass install bootstrap -r bootstrap-sass
+
 gem 'thin'
 
 gem 'slim'
