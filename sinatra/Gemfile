@@ -29,4 +29,5 @@ gem 'rack_csrf', :require => "rack/csrf"
 
 group :development do
   gem 'shotgun'
+  gem 'mina'
 end
