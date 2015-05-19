@@ -3,3 +3,8 @@
 
 /.sass-cache/*
 /app/assets/.sass-cache/*
+
+
+/config/application.yml
+/config/database.yml
+
