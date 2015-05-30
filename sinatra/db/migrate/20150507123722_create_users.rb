@@ -1,4 +1,5 @@
 # bundle exec rake db:create_migration NAME=create_users
+# it will not be generate schema.rb
 
 class CreateUsers < ActiveRecord::Migration
   def change
