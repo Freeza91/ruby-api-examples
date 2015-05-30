@@ -1,0 +1,23 @@
+default: &default
+  adapter: em_mysql2 # or mysql
+  encoding: utf8
+  reconnect: true
+  pool: 5
+  username: root
+  password:
+  timeout: 5000
+
+development:
+  <<: *default
+  database: goliath_dev
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: goliath_test
+
+production:
+  <<: *default
+  database: goliath_pro
